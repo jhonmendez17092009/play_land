@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chelo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #172554, #164e63);
+            color: #f8fafc;
+        }
+
+        header {
+            text-align: center;
+            padding: 35px 20px 25px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            color: #67e8f9;
+            text-shadow: 0 0 18px rgba(103, 232, 249, 0.35);
+        }
+
+        .subtitulo {
+            margin: 10px 0 0;
+            color: #cbd5e1;
+            font-size: 1rem;
+        }
+
+        .contenedor-juegos {
+            width: min(1200px, 92%);
+            margin: 0 auto 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 22px;
+        }
+
+        .juego {
+            background: rgba(15, 23, 42, 0.78);
+            border: 1px solid rgba(103, 232, 249, 0.22);
+            border-radius: 18px;
+            padding: 18px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .juego:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 30px rgba(34, 211, 238, 0.2);
+        }
+
+        .juego h3 {
+            min-height: 42px;
+            margin: 0 0 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f1f5f9;
+            font-size: 1.05rem;
+        }
+
+        .juego a {
+            display: block;
+        }
+
+        .juego img {
+            width: 100%;
+            max-width: 160px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
+            border: 2px solid rgba(103, 232, 249, 0.35);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+        }
+
+        .juego:hover img {
+            transform: scale(1.04);
+            border-color: #67e8f9;
+        }
+
+        @media (max-width: 500px) {
+            .contenedor-juegos {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 14px;
+            }
+
+            .juego {
+                padding: 12px;
+            }
+
+            .juego h3 {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><strong>Juegos gratis</strong></h1>
+        <p class="subtitulo">Elige un juego y comienza a jugar</p>
+    </header>
+
+    <main class="contenedor-juegos">
+        <article class="juego">
+            <h3>Triki</h3>
+            <a href="alfonzo/index.html">
+                <img src="img/debian.jpeg" alt="juego-debian">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Condor volador</h3>
+            <a href="carlos/index.html">
+                <img src="img/carlos.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>flappy bird</h3>
+            <a href="chelo/JS-Flappy-Bird/">
+                <img src="img/chelo.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>geometry dash</h3>
+            <a href="fontecha/index.html">
+                <img src="img/fontecha.avif" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Israel</h3>
+            <a href="harol/vercion2/index.html">
+                <img src="img/harol.webp" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Piedra, Papel o Tijeras</h3>
+            <a href="jhoasnel/version2/index.html">
+                <img src="img/yo.avif" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Sudoku </h3>
+            <a href="johan/Sudoku Version 2/index.html">
+                <img src="img/fiallo.png" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Pac-man</h3>
+            <a href="juan_fernando/version_modificada/index.html">
+                <img src="img/santana.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Gun fight</h3>
+            <a href="julian/index.html">
+                <img src="img/julian.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Pong</h3>
+            <a href="loxi/pongV2/index.html">
+                <img src="img/pong.png" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>2048</h3>
+            <a href="mariangel_ortegate/index.html">
+                <img src="img/2048.png" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Snake</h3>
+            <a href="masias/V2/index.html">
+                <img src="img/snake.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Frogger</h3>
+            <a href="miguelito/frogger modificado/index.html">
+                <img src="img/frogger.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Space invaders</h3>
+            <a href="ramon/Version 1.1/angelo's_slime_blast1.html">
+                <img src="img/ramon.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Buscaminas</h3>
+            <a href="rios/buscaminas_yo/index.html">
+                <img src="img/rios.webp" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Archila</h3>
+            <a href="samir/version_2/index.html">
+                <img src="img/archila.jpg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Tetris</h3>
+            <a href="scouter/index.html">
+                <img src="img/tetris.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Tetris 2</h3>
+            <a href="sofia/index.html">
+                <img src="img/sofia.jpeg" alt="juego-carlos">
+            </a>
+        </article>
+        <article class="juego">
+            <h3>Soreth</h3>
+            <a href="soreth/version_2/index.html">
+                <img src="img/soo.jpg" alt="juego-carlos">
+            </a>
+        </article>
+    </main>
+</body>
+</html>
